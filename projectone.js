@@ -1,11 +1,27 @@
+const humanChoice = prompt("What do you pick rock, paper or scissors ?")
+
+
+function getHumanChoice(humanChoice) {
+    if (humanChoice = "rock")
+        return 0
+    else if (humanChoice = "paper")
+        return 1
+    else if (humanChoice = "scissors")
+        return 2
+}
+
+let finalHumanChoice = getHumanChoice(humanChoice)
+
+console.log(finalHumanChoice)
+
 const choice = Math.floor(Math.random() * 3);
 function getComputerChoice(choice) {
     if (choice === 2) {
-       return "Scissors"
+       return "scissors"
     } else if (choice === 1) {
-        return "Paper"
+        return "paper"
     } else {
-        return "Rock"
+        return "rock"
     }
 }
 
