@@ -10,17 +10,12 @@ let [humanStrChoice, humanIntChoice] = getHumanChoice()
 
 console.log(humanStrChoice)
 
-const choice = Math.floor(Math.random() * 3);
-function getComputerChoice(choice) {
-    if (choice === 2) {
-       return "scissors"
-    } else if (choice === 1) {
-        return "paper"
-    } else {
-        return "rock"
-    }
+function getComputerChoice() {
+    let compIntChoice = Math.floor(Math.random() * 3);
+    let compStrChoice = moves[compIntChoice]
+    return [compIntChoice, compStrChoice]
 }
 
-let compChoice = getComputerChoice(choice)
+let [compIntChoice, compStrChoice] = getComputerChoice()
 
-console.log(compChoice)
+console.log (compStrChoice)
