@@ -1,4 +1,6 @@
-const humanChoice = prompt("What do you pick rock, paper or scissors ?")
+const moves = ["rock", "paper", "scissors"];
+
+
 
 
 function getHumanChoice(humanChoice) {
