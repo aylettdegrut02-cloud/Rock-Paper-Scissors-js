@@ -18,4 +18,20 @@ function getComputerChoice() {
 
 let [compIntChoice, compStrChoice] = getComputerChoice()
 
-console.log (compStrChoice)
+console.log(compStrChoice)
+
+function playRound(humanIntChoice, compIntChoice) {
+    const beats = [2, 0, 1];
+
+    if (humanIntChoice === compIntChoice) {
+        return `${compStrChoice} and ${humanStrChoice} its a tie.`
+    }
+
+    else if (beats[humanIntChoice] === compIntChoice) {
+        return `You Win! ${humanStrChoice} beats ${compStrChoice}`
+    }
+
+    else {
+        return `You Lose! ${compStrChoice} beats ${compStrChoice}`
+    }
+}
