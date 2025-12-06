@@ -1,20 +1,14 @@
 const moves = ["rock", "paper", "scissors"];
 
-
-
-
-function getHumanChoice(humanChoice) {
-    if (humanChoice = "rock")
-        return 0
-    else if (humanChoice = "paper")
-        return 1
-    else if (humanChoice = "scissors")
-        return 2
+function getHumanChoice() {
+    const humanChoice = prompt("What do you pick rock, paper or scissors?")
+    let humanStrChoice = humanChoice.toLowerCase();
+    return [humanStrChoice, moves.indexOf(humanStrChoice)]
 }
 
-let finalHumanChoice = getHumanChoice(humanChoice)
+let [humanStrChoice, humanIntChoice] = getHumanChoice()
 
-console.log(finalHumanChoice)
+console.log(humanStrChoice)
 
 const choice = Math.floor(Math.random() * 3);
 function getComputerChoice(choice) {
