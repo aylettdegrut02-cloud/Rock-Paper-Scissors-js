@@ -32,6 +32,8 @@ function playRound(humanIntChoice, compIntChoice) {
     }
 
     else {
-        return `You Lose! ${compStrChoice} beats ${compStrChoice}`
+        return `You Lose! ${compStrChoice} beats ${humanStrChoice}`
     }
 }
+
+console.log(playRound(humanIntChoice, compIntChoice))
